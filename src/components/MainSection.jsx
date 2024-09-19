@@ -4,7 +4,7 @@ import HeroSection from './HeroSection'
 
 const MainSection = () => {
   return (
-    <div className='w-[78%] h-screen bg-red-300'>
+    <div className='w-[79%] h-screen '>
       <Topbar/>
       <HeroSection/>
       

@@ -1,67 +1,61 @@
 import React from 'react'
-import { FaRegCompass,FaRegHeart,FaRegUser  } from "react-icons/fa";
+import { FaRegCompass, FaRegHeart, FaUser, FaUsers, FaCog, FaSignOutAlt } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
-import { FaUsers } from "react-icons/fa6";
-import { CiSettings } from "react-icons/ci";
-import { IoIosLogOut } from "react-icons/io";
-
-
-
 
 const LeftBar = () => {
   return (
-    <div className='w-[12%] h-screen relative'>
+    <div className='w-25% h-screen flex flex-col justify-between'>
+      <div>
         <div className='mt-14 ml-10'>
-            <h6 className='text-2xl my-5'>TRAVELLER</h6>
-            <h2 className='text-lg font-semibold'>Menu</h2>
-            <div className='flex flex-col ml-4 mt-2'>
-            <a href="#" className='flex mb-2 bg-yellow-400  py-2 rounded-lg'>
-                <FaRegCompass className='mt-1'/>
-                <span className='ml-2'>Browser</span>
+          <h6 className='text-2xl my-5'>TRAVELLER</h6>
+          <h2>Menu</h2>
+          <div className='flex flex-col ml-4 mt-2'>
+            <a href="#" className='flex mb-2 bg-yellow-400 px-4 py-2 rounded-lg'>
+              <FaRegCompass className='mt-1' />
+              <span className='ml-2'>Browser</span>
             </a>
             <a href="#" className='flex mb-2'>
-                <FaRegHeart className='mt-1'/>
-                <span className='ml-2'>Favorites</span>
+              <FaRegHeart className='mt-1' />
+              <span className='ml-2'>Favorites</span>
             </a>
             <a href="#" className='flex mb-2'>
-                <CiCalendar className='mt-1'/>
-                <span className='ml-2'>Schedule</span>
+              <CiCalendar className='mt-1' />
+              <span className='ml-2'>Schedule</span>
             </a>
-            </div>
+          </div>
 
-
-            <h2 className='text-lg font-semibold'>Social</h2>
-            <div className='flex flex-col ml-4 mt-2'>
-            <a href="#" className='flex mb-2 py-2 rounded-lg'>
-                <FaRegUser className='mt-1'/>
-                <span className='ml-2'>Friends</span>
+          <h2 className='mt-6'>Social</h2>
+          <div className='flex flex-col ml-4 mt-2'>
+            <a href="#" className='flex mb-2'>
+              <FaUser className='mt-1' />
+              <span className='ml-2'>Friends</span>
             </a>
             <a href="#" className='flex mb-2'>
-                <FaUsers className='mt-1'/>
-                <span className='ml-2'>Parties</span>
+              <FaUsers className='mt-1' />
+              <span className='ml-2'>Parties</span>
             </a>
-        
-            </div>
+          </div>
 
-            <h2 className='text-lg font-semibold'>General</h2>
-            <div className='flex flex-col ml-4 mt-2'>
-            <a href="#" className='flex mb-2 py-2 rounded-lg'>
-                <CiSettings className='mt-1'/>
-                <span className='ml-2'>Settings</span>
+          <h2 className='mt-6'>General</h2>
+          <div className='flex flex-col ml-4 mt-2'>
+            <a href="#" className='flex mb-2'>
+              <FaCog className='mt-1' />
+              <span className='ml-2'>Settings</span>
             </a>
             <a href="#" className='flex mb-2'>
-                <IoIosLogOut className='mt-1'/>
-                <span className='ml-2'>Logout</span>
+              <FaSignOutAlt className='mt-1' />
+              <span className='ml-2'>Logout</span>
             </a>
-           
-            </div>
-
-            <div className='bg-slate-300 p-5 absolute bottom-0 w-full rounded-xl'>
-                <h3 className='font-bold text-2xl my-2'>50% DISCOUNT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, vitae. Vero cum ullam laborum eligendi impedit minima sequi eveniet culpa, blanditiis nobis consectetur </p>
-            </div>
+          </div>
         </div>
-        
+      </div>
+
+      <div className='flex justify-center mb-10'>
+        <div className='bg-gray-500 text-white p-8 rounded-lg w-3/4 text-center'>
+          <p className='text-4xl font-bold text-black'>50% Off</p>
+          <p className='text-2xl font-bold text-black mt-2'>Sale Sale!!</p>
+        </div>
+      </div>
     </div>
   )
 }
